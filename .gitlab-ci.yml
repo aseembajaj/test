@@ -1,0 +1,7 @@
+stages:
+ - sync
+
+uptake_changes:
+  stage: sync
+  script:
+    - ./sync.sh https://github.com/aseembajaj/test.git git@gitlab-odx.oracledx.com:odx-aura-oss/test.git
